@@ -9,7 +9,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/tasks")
 public class TaskController {
-    public TaskService taskService;
+    private final TaskService taskService;
     public TaskController(TaskService taskService) {
         this.taskService = taskService;
     }

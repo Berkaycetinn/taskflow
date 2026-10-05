@@ -13,10 +13,10 @@ import lombok.Setter;
 public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
-    String title;
-    String description;
-    String status;
+    private Long id;
+    private String title;
+    private String description;
+    private String status;
 
     public Task() {}
 }
